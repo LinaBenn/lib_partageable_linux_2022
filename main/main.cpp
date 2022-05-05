@@ -6,14 +6,14 @@
 
 int main(int argc, char ** argv)
 {
-	int data1=3;
-	int data2=5;
+	int comp1=3;
+	int cmop2=5;
 	int valeur;
 	
 	int choix=-1;
 	
 	while (choix != 1 && choix != 2) {
-		std::cout << "Quel composant voulez-vous utiliser ? 1 ou 2" << std::endl;
+		std::cout << "Choisir un composant 1 ou 2" << std::endl;
 		std::cin >> choix;
 	}
 	void* hndl = nullptr;
@@ -43,7 +43,7 @@ int main(int argc, char ** argv)
 		exit(EXIT_FAILURE);
 	}
 
-	std::cout << "Valeur : " << fct(data1, data2) << std::endl;
+	std::cout << "Valeur : " << fct(comp1, comp2) << std::endl;
 	
 	dlclose(hndl);
 	exit(EXIT_SUCCESS);
