@@ -13,7 +13,7 @@ int main(int argc, char ** argv)
 	int choix=-1;
 	
 	while (choix != 1 && choix != 2) {
-		std::cout << "Quel composant voulez-vous utiliser ? (1/2)" << std::endl;
+		std::cout << "Quel composant voulez-vous utiliser ? 1 ou 2" << std::endl;
 		std::cin >> choix;
 	}
 	void* hndl = nullptr;
