@@ -10,7 +10,7 @@ int main(int argc, char ** argv)
 	int data2=5;
 	int valeur;
 	
-	int choix=-1
+	int choix=-1;
 	
 	while (choix != 1 && choix != 2) {
 		std::cout << "Quel composant voulez-vous utiliser ? (1/2)" << std::endl;
