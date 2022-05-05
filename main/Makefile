@@ -35,3 +35,4 @@ install: ${BIN_DIR} all
 
 ${BIN_DIR}:
 	mkdir $@
+
