@@ -7,7 +7,7 @@
 int main(int argc, char ** argv)
 {
 	int comp1=3;
-	int cmop2=5;
+	int comp2=5;
 	int valeur;
 	
 	int choix=-1;
