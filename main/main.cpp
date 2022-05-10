@@ -1,16 +1,15 @@
 
 #include <iostream>
 #include <dlfcn.h>
-#include "Composant1.h"
-#include "Composant2.h"
+
 
 int main(int argc, char ** argv)
 {
-	int comp1=3;
-	int comp2=5;
+	int num1=3;
+	int num2=10;
 	int valeur;
 	
-	int choix=-1;
+	int choix=0;
 	
 	while (choix != 1 && choix != 2) {
 		std::cout << "Choisir un composant 1 ou 2" << std::endl;
@@ -43,7 +42,7 @@ int main(int argc, char ** argv)
 		exit(EXIT_FAILURE);
 	}
 
-	std::cout << "Valeur : " << fct(comp1, comp2) << std::endl;
+	std::cout << "Valeur : " << fct(num1, num2) << std::endl;
 	
 	dlclose(hndl);
 	exit(EXIT_SUCCESS);
